@@ -1,0 +1,32 @@
+.showcase {
+    margin-top: 1rem;
+    width: 100%;
+    .slides {
+        position: relative;
+        margin: 0 0 4rem 0;
+
+        h1 {
+            position: absolute;
+            bottom: -2.5rem;
+            text-align: center;
+            width: 100%;
+            font-size: $fs-md;
+
+            span {
+                color: $grayish-blue;
+                font-weight: $Medium;
+            }
+        }
+
+        .slide {
+            width: 100%;
+            height: 400px;
+            background-position: top;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            @include maximum(mobile){
+                height: 200px;
+            }
+        }
+    }
+}

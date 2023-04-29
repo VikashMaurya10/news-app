@@ -1,0 +1,115 @@
+.grid {
+    padding: 1rem;
+
+    &__title {
+        margin: 0.5rem 0;
+
+        h1 {
+            font-size: $fs-lg;
+            padding-left: 1rem;
+            @include maximum(mobile) {
+                padding-left: 0.5rem;
+                font-size: 1.1rem;
+            }
+        }
+
+        button {
+            background-color: $active-link;
+            padding: 0.8rem 1rem;
+            color: $white;
+            gap: 0.5rem;
+            border-radius: 8px;
+            transition: scale 0.1s ease-in-out;
+
+            &:hover {
+                scale: 1.04;
+            }
+
+            @include maximum(mobile) {
+                font-size: $fs-sm;
+                padding: 0.6rem;
+
+            }
+        }
+    }
+
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 1rem;
+        margin-top: 1rem;
+
+
+        .container {
+            position: relative;
+
+            .card {
+                background-color: $Light-grayish-blue;
+                border-radius: 8px;
+                overflow: hidden;
+                cursor: pointer;
+                transition: scale 0.1s ease-in-out;
+                height: 240px;
+
+                &:hover {
+                    scale: 1.015;
+                }
+
+                img {
+                    width: 100%;
+                    height: 150px;
+                }
+
+                h1 {
+                    padding: 0 0.8rem 0 0.8rem;
+                    font-size: $fs-md;
+                    font-weight: $Medium;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                }
+
+
+                div {
+                    padding: 0.8rem;
+                    color: $bg-color;
+
+                    span {
+                        font-size: $fs-sm;
+                    }
+                }
+
+            }
+
+            .shareBtns {
+                position: absolute;
+                top: 0.8rem;
+                right: 1rem;
+                width: 2rem;
+                height: 2rem;
+                background-color: $white;
+                border-radius: 50%;
+
+                .icon {
+                    font-size: 1rem;
+                }
+
+            }
+
+            .btns {
+                display: none;
+
+                button {
+                    color: $white;
+                }
+            }
+
+            .show {
+                position: absolute;
+                display: block;
+                top: 1.5rem;
+            }
+        }
+    }
+}

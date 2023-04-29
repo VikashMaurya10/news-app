@@ -1,0 +1,43 @@
+.footer {
+    width: 100%;
+    margin: 1.5rem 0;
+    .footer-inner {
+        background-color: lightgray;
+        padding: 1rem;
+        width: 80%;
+        margin: 0 auto;
+
+        @include maximum(mobile) {
+            flex-direction: column;
+
+            &__contect {
+                margin-top: 20px;
+                text-align: center !important;
+            }
+
+        }
+
+        &__contect {
+            text-align: right;
+            width: 200px;
+
+            .footer-icon {
+                margin-top: 20px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                &__child {
+                    font-size: 1.5rem;
+                    cursor: pointer;
+                    transition: color 0.3s ease-in-out;
+
+                    &:hover {
+                        color: $active-link;
+                    }
+                }
+
+            }
+        }
+    }
+}
