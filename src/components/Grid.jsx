@@ -12,11 +12,11 @@ const Grid = ({ category, heading }) => {
   useEffect(() => {
     axios({
       method: "get",
-      url: `https://newsapi.org/v2/top-headlines?country=in&category=${category}&apiKey=47a37d78b92b4b83b156f537e3c567e3`,
+      url: `https://newsapi.org/v2/top-headlines?country=in&category=${category}&apiKey=e9565a9f001d473a9a9a613e7f9cc76d`,
       // vicky:29f8e42efe874ee2be23f0d1edb6844b
     }).then((res) => {
       setNews(res.data.articles);
-      setIsLoading(false)
+      setIsLoading(false);
     });
   }, []);
   return (
@@ -46,12 +46,12 @@ const Grid = ({ category, heading }) => {
           } = value;
           if (urlToImage != null) {
             return (
-              <div className="container">
-                <div key={index}>
+              <div className="container" key={index}>
+                <div>
                   <div
                     className="card"
                     onClick={() => {
-                      // window.open(`${url}`, "_blank");
+                      window.open(`${url}`, "_blank");
                       console.log("card");
                     }}
                   >

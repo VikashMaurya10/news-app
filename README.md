@@ -52,7 +52,7 @@ This command will start a local server on `http://localhost:4173/`. you can open
 ### Links
 
 - Solution URL: [get solution🌐](https://github.com/VikashMaurya10/news-app)
-- Live Site URL: [preview](https://news-app1.vercel.app/)
+- Preview Drive link: [video preview](https://drive.google.com/file/d/16b1ylDQMe0ghb_xiwLyNeFTP6dgL8cBX/view?usp=share_link)
 
 ## My process
 

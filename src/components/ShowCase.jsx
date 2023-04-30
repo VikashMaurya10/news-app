@@ -13,7 +13,7 @@ const ShowCase = ({ query, endpoint }) => {
   useEffect(() => {
     axios({
       method: "get",
-      url: `https://newsapi.org/v2/${endpoint}?q=${query}&from=2023-04-26&apiKey=47a37d78b92b4b83b156f537e3c567e3`,
+      url: `https://newsapi.org/v2/${endpoint}?q=${query}&from=2023-04-26&apiKey=e9565a9f001d473a9a9a613e7f9cc76d`,
     }).then((res) => {
       setNews(res.data.articles);
       setIsLoading(false)
